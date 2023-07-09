@@ -13,7 +13,7 @@ function generator(name_kr, name_en, title, phone, email, gpg) {
 }
 </script>
 
-<h1>우분투한국커뮤니티 이메일 서명 생성기</h1>
+<h1>이메일 서명 생성기</h1>
 
 <input bind:value={name_kr} type="text" required="true" placeholder="이름"/>
 <input bind:value={name_en} type="text" required="true" placeholder="영문 이름"/>
@@ -26,4 +26,6 @@ function generator(name_kr, name_en, title, phone, email, gpg) {
 <pre>{sign}</pre>
 <br>
 <h1>미리보기</h1>
-{@html sign}
+<div id="preview">
+	{@html sign}
+</div>
